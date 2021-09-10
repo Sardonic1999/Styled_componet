@@ -22,12 +22,12 @@ export default class Carousel extends Component {
           naturalSlideHeight={40}
           totalSlides={4}
         >
-          <Slider>
+          <Slider style={{ width: "1400px" }}>
             <Slide index={0}>
               <img
                 style={{
                   width: "100%",
-                  padding: "10px 0px 0px 0px",
+                  padding: "10px 0px 0px 200px",
                   height: "100%",
                 }}
                 src={img01}
