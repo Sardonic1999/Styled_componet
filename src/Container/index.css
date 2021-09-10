@@ -1,0 +1,14 @@
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: rgb(126, 117, 117);
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --textcolor: #c45137;
+  --background: rgb(0, 255, 13);
+}
