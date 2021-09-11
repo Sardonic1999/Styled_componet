@@ -3,7 +3,7 @@ import "../Render/Style.css";
 import Carousel from "../Carusel/Carousel";
 import Container from "../Container/Container";
 import Form from "../SC project/Form";
-
+import ReactHooks from "../Hook/ReactHooks";
 export default class Render extends Component {
   constructor(props) {
     super(props);
@@ -33,16 +33,16 @@ export default class Render extends Component {
             Container
           </div>
           <div
-            onClick={() => change("Form")}
-            className={this.state.isActive === "Form" ? "tab" : "item"}
+            onClick={() => change("SC")}
+            className={this.state.isActive === "SC" ? "tab" : "item"}
           >
-            Form
+            SC
           </div>
           <div
-            onClick={() => change("Map")}
-            className={this.state.isActive === "Map" ? "tab" : "item"}
+            onClick={() => change("Hook")}
+            className={this.state.isActive === "Hook" ? "tab" : "item"}
           >
-            Map
+            Hook
           </div>
           <div
             onClick={() => change("None")}
@@ -54,8 +54,8 @@ export default class Render extends Component {
         {/* <h3>{this.state.isActive}</h3> */}
         {this.state.isActive === "Carousel" && <Carousel />}
         {this.state.isActive === "Container" && <Container />}
-        {this.state.isActive === "Form" && <Form />}
-        {this.state.isActive === "Map"}
+        {this.state.isActive === "SC" && <Form />}
+        {this.state.isActive === "Hook" && <ReactHooks />}
         {this.state.isActive === "None"}
       </div>
     );
